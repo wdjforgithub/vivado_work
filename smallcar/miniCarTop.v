@@ -75,13 +75,15 @@ createCLK	U0		(
 //	Use & Link all modes
 wire[1:0] miniCarMode;		
 wire[2:0] mode_seg_en;
+wire[7:0] Frame_Data;
 carControl		U1	(
 						.clk_in(clk_100M),
 						.rst_n(rst_n),
 						.ir_in(ir_in),
 						.miniCarMode(miniCarMode),
 						.mode_seg_en(mode_seg_en),
-						.Action(Action1)
+						.Action(Action1),
+						.Frame_Data(Frame_Data)
 						);	
 
 autoTracking 	U2	(
@@ -145,7 +147,8 @@ segOUT 			U8	(
 						.data_in_2(speed_data),
 						.data_in_3(distance_data),						
 						.seg_cs(seg_cs),
-						.seg_db(seg_db)
+						.seg_db(seg_db),
+						.Frame_Data(Frame_Data)
 						);
 
 

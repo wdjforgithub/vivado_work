@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jun 28 11:28:37 2018
-# Process ID: 11840
+# Start of session at: Thu Jun 28 16:42:27 2018
+# Process ID: 880
 # Current directory: C:/Users/wdj/source/vivado_work/smallcar/smallcar.runs/impl_1
 # Command line: vivado.exe -log miniCarTop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source miniCarTop.tcl -notrace
 # Log file: C:/Users/wdj/source/vivado_work/smallcar/smallcar.runs/impl_1/miniCarTop.vdi

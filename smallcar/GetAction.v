@@ -58,15 +58,15 @@ begin
 	if (!rst_n)
 	begin
 		Action <= Stop;
-		miniCarMode <= 2'b00;//b11 test wangdongjian
+		miniCarMode <= 2'b01;//b11 test wangdongjian
 	end
 	else
 		case(Frame_Data)
 		8'h45:	
 		begin
 			Action <= Straight_Fast;
-			miniCarMode <= 2'b00;	//	default control mode
-			mode_seg_en <= 3'b010;	// default speed seg out 
+			miniCarMode <= 2'b01;	//	default control mode//00
+			mode_seg_en <= 3'b010;	// default speed seg out //010
 		end
 		8'h40:	if (miniCarMode == 2'b00)	Action <= Straight_Fast;	else	;
 		8'h07:	if (miniCarMode == 2'b00)	Action <= Turn_Left;			else	;
@@ -78,17 +78,17 @@ begin
 		8'h19:	if (miniCarMode == 2'b00)	Action <= Retreat;			else	;
 		8'h15:	if (miniCarMode == 2'b00)	Action <= Stop;				else	;
 		8'h47:	Action <= Stop;		
-		8'h42:	miniCarMode <= 2'b00;
+		8'h42:	miniCarMode <= 2'b01;//00
 		8'h52:	miniCarMode <= 2'b01;
-		8'h4A:	miniCarMode <= 2'b10;
-		8'h0C:	mode_seg_en <= 3'b011;
-		8'h18:	mode_seg_en <= 3'b010;
-		8'h5E:	mode_seg_en <= 3'b001;
-		8'h5A:	mode_seg_en <= 3'b000; 
+		8'h4A:	miniCarMode <= 2'b01;//10
+		8'h0C:	mode_seg_en <= 3'b010;//011
+		8'h18:	mode_seg_en <= 3'b010;//010
+		8'h5E:	mode_seg_en <= 3'b010;//001
+		8'h5A:	mode_seg_en <= 3'b010; //000
 		default:	
 		begin
 			Action <= Stop;
-			miniCarMode <= 2'b00;//b11 test wangdongjian
+			miniCarMode <= 2'b01;//b11 test wangdongjian
 			mode_seg_en <= 3'b010;//000
 		end
 		endcase
