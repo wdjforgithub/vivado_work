@@ -58,7 +58,7 @@ begin
 	if (!rst_n)
 	begin
 		Action <= Stop;
-		miniCarMode <= 2'b11;
+		miniCarMode <= 2'b00;//b11 test wangdongjian
 	end
 	else
 		case(Frame_Data)
@@ -88,8 +88,8 @@ begin
 		default:	
 		begin
 			Action <= Stop;
-			miniCarMode <= 2'b11;
-			mode_seg_en <= 3'b000;
+			miniCarMode <= 2'b00;//b11 test wangdongjian
+			mode_seg_en <= 3'b010;//000
 		end
 		endcase
 end

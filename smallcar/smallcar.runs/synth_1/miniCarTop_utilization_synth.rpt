@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Jun 26 17:51:40 2018
+| Date         : Thu Jun 28 11:28:29 2018
 | Host         : DESKTOP-T1B8B30 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file miniCarTop_utilization_synth.rpt -pb miniCarTop_utilization_synth.pb
 | Design       : miniCarTop
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  631 |     0 |     63400 |  1.00 |
-|   LUT as Logic          |  631 |     0 |     63400 |  1.00 |
+| Slice LUTs*             |  628 |     0 |     63400 |  0.99 |
+|   LUT as Logic          |  628 |     0 |     63400 |  0.99 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |  657 |     0 |    126800 |  0.52 |
 |   Register as Flip Flop |  641 |     0 |    126800 |  0.51 |
@@ -54,8 +54,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 40    |          Yes |           - |          Set |
-| 539   |          Yes |           - |        Reset |
+| 38    |          Yes |           - |          Set |
+| 541   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 78    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -146,16 +146,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |  523 |        Flop & Latch |
+| FDCE     |  525 |        Flop & Latch |
 | LUT2     |  268 |                 LUT |
-| LUT6     |  175 |                 LUT |
-| LUT4     |  121 |                 LUT |
-| LUT5     |   94 |                 LUT |
+| LUT6     |  174 |                 LUT |
+| LUT4     |  118 |                 LUT |
+| LUT5     |   91 |                 LUT |
 | FDRE     |   78 |        Flop & Latch |
 | CARRY4   |   74 |          CarryLogic |
-| LUT3     |   69 |                 LUT |
+| LUT3     |   71 |                 LUT |
 | MUXF7    |   44 |               MuxFx |
-| FDPE     |   40 |        Flop & Latch |
+| FDPE     |   38 |        Flop & Latch |
 | OBUF     |   34 |                  IO |
 | LDCE     |   16 |        Flop & Latch |
 | IBUF     |   13 |                  IO |
