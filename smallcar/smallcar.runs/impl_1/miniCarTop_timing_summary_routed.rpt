@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jun 28 16:43:50 2018
+| Date         : Thu Jun 28 19:08:53 2018
 | Host         : DESKTOP-T1B8B30 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file miniCarTop_timing_summary_routed.rpt -rpx miniCarTop_timing_summary_routed.rpx -warn_on_violation
 | Design       : miniCarTop
@@ -52,13 +52,13 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 68 register/latch pins with no clock driven by root clock pin: clk_in (HIGH)
+ There are 77 register/latch pins with no clock driven by root clock pin: clk_in (HIGH)
 
- There are 106 register/latch pins with no clock driven by root clock pin: U0/D1/clk_out_reg/Q (HIGH)
+ There are 122 register/latch pins with no clock driven by root clock pin: U0/D1/clk_out_reg/Q (HIGH)
 
- There are 64 register/latch pins with no clock driven by root clock pin: U0/D2/clk_out_reg/Q (HIGH)
+ There are 218 register/latch pins with no clock driven by root clock pin: U0/D2/clk_out_reg/Q (HIGH)
 
- There are 63 register/latch pins with no clock driven by root clock pin: U0/D3/clk_out_reg/Q (HIGH)
+ There are 69 register/latch pins with no clock driven by root clock pin: U0/D3/clk_out_reg/Q (HIGH)
 
  There are 8 register/latch pins with no clock driven by root clock pin: U1/U1/FSM_sequential_current_state_reg[0]/Q (HIGH)
 
@@ -80,11 +80,21 @@ Table of Contents
 
  There are 8 register/latch pins with no clock driven by root clock pin: U1/U1/irda_reg2_reg/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: U6/U2/FSM_sequential_state_reg[0]/Q (HIGH)
+ There are 32 register/latch pins with no clock driven by root clock pin: U3/U1/time_echo_reg_reg/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: U6/U2/FSM_sequential_state_reg[1]/Q (HIGH)
+ There are 32 register/latch pins with no clock driven by root clock pin: U3/U2/time_echo_reg_reg/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: U6/U2/FSM_sequential_state_reg[2]/Q (HIGH)
+ There are 32 register/latch pins with no clock driven by root clock pin: U3/U3/time_echo_reg_reg/Q (HIGH)
+
+ There are 33 register/latch pins with no clock driven by root clock pin: U3/U8/clk_out_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: U3/U9/time_echo_reg_reg/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: U6/U2/FSM_sequential_state_reg[0]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: U6/U2/FSM_sequential_state_reg[1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: U6/U2/FSM_sequential_state_reg[2]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -99,14 +109,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 750 pins that are not constrained for maximum delay. (HIGH)
+ There are 1563 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 8 input ports with no input delay specified. (HIGH)
+ There are 12 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 

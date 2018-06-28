@@ -24,7 +24,6 @@ module	segOUT(
 					data_in_3,		//distance
 					seg_cs,
 					seg_db,
-					Frame_Data//
 					);
 				
 input clk_in;
@@ -32,7 +31,6 @@ input rst_n;
 input[2:0] mode_seg_en;
 input[31:0] data_in_1, data_in_2, data_in_3;
 //test2 wangdongjian
-input[7:0] Frame_Data;//
 output[7:0] seg_cs;
 output[7:0] seg_db;
 
@@ -74,8 +72,8 @@ begin
 			endcase
 		else if (mode_seg_en == 3'b010)		//	Speed data
 			case(seg_cs)		
-			8'b0111_1111:		SEGOUT <= {4'h0,Frame_Data[7:4]};//
-			8'b1011_1111:		SEGOUT <= {4'h0,Frame_Data[3:0]};//
+			8'b0111_1111:		SEGOUT <= {4'h0,data_in_2[7:4]};//
+			8'b1011_1111:		SEGOUT <= {4'h0,data_in_2[3:0]};//
 			8'b1101_1111:		SEGOUT <= 8'hFF;
 			8'b1110_1111:		SEGOUT <= 8'hFF;
 			8'b1111_0111:		SEGOUT <= {4'h0,data_in_2[23:20]};

@@ -20,7 +20,6 @@ module carControl	(
 					ir_in,
 					miniCarMode,
 					mode_seg_en,
-					Frame_Data,//
 					Action
 					);
 				
@@ -30,8 +29,6 @@ input ir_in;
 output[1:0] miniCarMode;	//	The mode that miniCar worked (control & autoTracking & avoidObject)
 output[2:0] mode_seg_en;	//	The EN signal of 4-7 digital seg
 output[3:0] Action;			//	The Action of that mode
-//
-output[7:0] Frame_Data;
 
 wire[7:0] Frame_Data;		//	The data that received based on FSM
 HongWai		U1	(
